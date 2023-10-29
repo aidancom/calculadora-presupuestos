@@ -1,0 +1,31 @@
+.gastos {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    &-caja {
+        margin-bottom: 50px;
+        width: 30%;
+        text-align: center;
+        align-items: center;
+        position: relative;
+        top: 20px;
+        display: flex;
+        flex-direction: row;
+        background-color: #fff;
+        padding: 50px 100px 50px 100px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 16px 3px rgba(0, 0, 0, 0.75);
+        justify-content: space-between;
+        .categoria {
+            color: #139eeece;
+            text-transform: uppercase;
+            font-weight: bold;
+            font-size: 20px;  
+        }
+        .nombre {
+            text-transform: uppercase;
+            font-weight: bold;
+            font-size: 15px;  
+        }
+    }
+    }

@@ -1,0 +1,65 @@
+.modal {
+    background-color: rgba(0, 0, 0, 0.644);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    overflow: hidden;
+    img {
+        width: 55px;
+        top: 3%;
+        position: relative;
+        left: 95%;
+    }
+    &-formulario {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 85%;
+        .animar {
+            opacity: 1;
+            display: flex;
+           
+        }
+        .desanimar {
+            opacity: 0;
+        }
+        form {
+            background-color: #fff;
+            display: none;
+            flex-direction: column;
+            justify-content: center;
+            border-radius: 10px;
+            padding: 30px;
+            opacity: 0;
+            transition: 1s all linear;
+            label {
+                color: rgb(19, 158, 238);
+                font-size: 35px;
+            }
+            input {
+                margin-top: 20px;
+                margin-bottom: 20px;
+                height: 20px;
+            }
+            select {
+                margin-top: 20px;
+                margin-bottom: 20px;
+                height: 20px;
+            }
+            input[type="submit"] {
+                border-radius: 5px;
+                border: none;
+                padding: 10px;
+                text-transform: uppercase;
+                color: #fff;
+                cursor: pointer;
+                font-weight: bold;
+                height: unset;
+                background-color: rgb(19, 158, 238);;
+            }
+            
+        }
+    }
+   
+}

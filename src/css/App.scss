@@ -1,0 +1,14 @@
+body {
+    font-family: 'Lato', sans-serif;
+    margin: 0 auto;
+    .gasto {
+        width: 50px;
+        position: fixed;
+        left: 95%;
+        top: 90%;
+    }
+    .fijo {
+        overflow: hidden;
+        height: 100vh;
+    }
+}

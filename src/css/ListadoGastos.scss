@@ -1,0 +1,23 @@
+.listado  {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    h2 {
+        color: #139eee;
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 20px;  
+    }
+    .gastos {
+        &-caja {
+           img {
+            width: 20%;
+           } 
+           &-nombres {
+            text-align: left;
+            width: 15%;
+           }
+        }
+    }
+}
