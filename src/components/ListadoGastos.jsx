@@ -13,9 +13,9 @@ const ListadoGastos = ({gastos, setEditar, eliminar}) => {
         )
     
         }
-          {gastos.map( (e) => (
+          {gastos.map( (gasto) => (
             <Gasto 
-              key={e.id}
+              key={gasto.id}
               gasto={e}
               setEditar={setEditar}
               eliminar={eliminar}
