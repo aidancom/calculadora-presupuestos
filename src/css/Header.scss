@@ -77,3 +77,15 @@ header {
     }
     
 }
+
+@media (max-width: 425px) {
+    header {
+        .presupuesto {
+            width: 80%;
+            &-formulario {
+                padding: 50px 10px;
+            }
+        }
+    }
+    
+}
