@@ -53,3 +53,27 @@ header {
         }
     }
 }
+
+@media (max-width: 1024px) {
+    header {
+        .presupuesto {
+            width: 80%;
+            &-formulario {
+             
+                &-enviar {
+                    width: 100%;
+                }
+                &-campo {
+                    width: 100%;
+                    label {
+                        font-size: 20px;
+                    }
+                    &-input {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+    
+}
