@@ -14,6 +14,7 @@ function App() {
   const [nombre, setNombre] = useState("");
   const [modal, setModal] = useState(false);
   const [animar, setAnimar] = useState(false);
+
   const [editar, setEditar] = useState({});
 
   const eliminar = (id) => {
@@ -23,18 +24,30 @@ function App() {
 
   useEffect (() => {
     if (Object.keys(editar).length > 0) {
-      console.log("hay algo");
+      setModal(true)
+      setInterval(() => {
+      setAnimar(true);
+   }, 1000);
     }
   }, [editar])
 
 
   const guardarGasto = (gasto) => {
-    gasto.id = generarId();
-    setGastos([...gastos, gasto])
+    if(gasto.id) {
+      const gastosActualizados = gastos.map(gastoss => gastoss.id === gasto.id ? gasto : gastoss)
+      setGastos(gastosActualizados)
+    } else {
+      gasto.id = generarId();
+      setGastos([...gastos, gasto])
+    }
+
+   
   }
 
    const handleModal = () => {
+    
    setModal(true)
+   setEditar({})
    setInterval(() => {
     setAnimar(true);
    }, 1000);
@@ -75,6 +88,7 @@ function App() {
               setAnimar={setAnimar}
               guardarGasto={guardarGasto}
               editar={editar}
+              setEditar={setEditar}
             />
           )}
         </div>

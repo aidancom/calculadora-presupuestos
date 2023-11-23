@@ -1,3 +1,19 @@
+.swipeable-list-item__leading-actions.swipeable-list-item__leading-actions{
+    background-color: rgb(15, 175, 0);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+}
+.swipeable-list-item__trailing-actions.swipeable-list-item__trailing-actions{
+    background-color: rgb(187, 0, 0);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+}
 .gastos {
     width: 100%;
     display: flex;

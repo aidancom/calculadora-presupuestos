@@ -7,7 +7,7 @@ import {
   TrailingActions
 } from 'react-swipeable-list'
 import '../css/Gastos.scss'
-import "react-swipeable-list/dist/styles.css"
+import 'react-swipeable-list/dist/styles.css';
 import "react-swipeable-list/dist/react-swipeable-list.cjs"
 import IconoAhorro from '../img/icono_ahorro.svg'
 import IconoCasa from '../img/icono_casa.svg'
@@ -34,12 +34,12 @@ const Gasto = ({gasto, setEditar, eliminar}) => {
     
   
   const iconos = {
-    casa: IconoCasa,
-    comida: IconoComida,
-    ocio: IconoOcio,
-    ahorro: IconoAhorro,
-    salud: IconoSalud,
-    gastos: IconoGasto
+    Casa: IconoCasa,
+    Comida: IconoComida,
+    Ocio: IconoOcio,
+    Ahorro: IconoAhorro,
+    Salud: IconoSalud,
+    Gastos: IconoGasto
   }
   return (
     <SwipeableList>
